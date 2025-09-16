@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWNEDGE – Build Your Edge Daily</title>
+  <meta name="description" content="OWNEDGE is an athlete‑driven training app powered by EdgeAI. Build your edge daily with personalised programs for strength, power, endurance, speed, fascia, recovery and more. Start your free trial.">
+  <meta name="keywords" content="OwnEdge, OWNEDGE, athlete training, EdgeAI, strength, power, endurance, speed, fascia, recovery, workout app">
+  <meta property="og:title" content="OWNEDGE – Build Your Edge Daily">
+  <meta property="og:description" content="Train smarter and perform stronger with OWNEDGE. Powered by EdgeAI.">
+  <meta property="og:image" content="assets/hero-fallback.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourowndomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OWNEDGE – Build Your Edge Daily">
+  <meta name="twitter:description" content="Train smarter and perform stronger with OWNEDGE. Powered by EdgeAI.">
+  <meta name="twitter:image" content="assets/hero-fallback.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <!-- Mobile menu button -->
+  <button class="menu-btn" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <!-- Sidebar navigation -->
+  <div class="sidebar">
+    <div>
+      <div class="logo">OWNEDGE</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer">© OWNEDGE 2025. All rights reserved.</div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <video autoplay loop muted playsinline aria-hidden="true">
+        <source src="assets/hero-bg.webm" type="video/webm">
+        <source src="assets/hero-bg.mp4" type="video/mp4">
+      </video>
+      <picture>
+        <img src="assets/hero-fallback.jpg" alt="OWNEDGE hero background">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>OWNEDGE: Build Your Edge Daily</h1>
+        <p>Train smarter. Perform stronger. Powered by EdgeAI.</p>
+        <div class="cta-buttons">
+          <a href="javascript:void(0)" class="button primary" onclick="subscribe({priceId:'price_monthly'})">Start Free Trial</a>
+          <a href="pricing.html" class="button secondary">View Plans</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Benefits -->
+    <section class="benefits">
+      <div class="benefit hidden">
+        <img src="assets/strength-icon.png" alt="Strength icon">
+        <h3>Strength</h3>
+        <p>Develop raw power through progressive overload and expert guidance.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/power-icon.png" alt="Power icon">
+        <h3>Power</h3>
+        <p>Explosive programs to amplify your game‑changing bursts of energy.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/endurance-icon.png" alt="Endurance icon">
+        <h3>Endurance</h3>
+        <p>Build stamina for the long haul with adaptive cardio and pacing.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/speed-icon.png" alt="Speed icon">
+        <h3>Speed</h3>
+        <p>Accelerate your sprint and reaction times with drills that push limits.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/fascia-icon.png" alt="Fascia icon">
+        <h3>Fascia</h3>
+        <p>Improve mobility and elasticity with fascia release and flexibility work.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/recovery-icon.png" alt="Recovery icon">
+        <h3>Recovery</h3>
+        <p>Recover like a pro through active rest, stretching and restorative sessions.</p>
+      </div>
+      <div class="benefit hidden">
+        <img src="assets/edgeai-icon.png" alt="EdgeAI icon">
+        <h3>EdgeAI</h3>
+        <p>Unlock personalised guidance with our athlete‑focused AI coach.</p>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="stories">
+      <h2>Success Stories</h2>
+      <div class="story-cards">
+        <div class="story-card hidden">
+          <img src="assets/success-headshot.png" alt="Athlete testimonial">
+          <blockquote>“After using OwnEdge, my lifts skyrocketed and my confidence followed.”</blockquote>
+          <span>Elite Powerlifter</span>
+        </div>
+        <div class="story-card hidden">
+          <img src="assets/success-headshot.png" alt="Athlete testimonial">
+          <blockquote>“EdgeAI pushed me to my best season ever. I’m never going back.”</blockquote>
+          <span>Professional Sprinter</span>
+        </div>
+        <div class="story-card hidden">
+          <img src="assets/success-headshot.png" alt="Athlete testimonial">
+          <blockquote>“The recovery and mobility programs saved my career. Thank you!”</blockquote>
+          <span>Pro Footballer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download strip (appears on every page) -->
+    <div class="download-strip">
+      <h3>Train on the go</h3>
+      <div class="store-buttons">
+        <a href="#" class="store-button"><i class="fa-brands fa-apple"></i>App Store</a>
+        <a href="#" class="store-button"><i class="fa-brands fa-google-play"></i>Google Play</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky mobile subscribe button -->
+  <div class="sticky-subscribe"><a href="pricing.html" style="color:inherit; text-decoration:none;">Start 14‑Day Free Trial</a></div>
+
+  <!-- Cookie banner (hidden until first visit) -->
+  <div class="cookie-banner" style="display:none;">
+    <span>We use cookies to enhance your experience. By continuing, you agree to our cookie policy.</span>
+    <button type="button">Accept</button>
+  </div>
+
+  <!-- Font Awesome icons for social/store buttons -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-pYnb6IzAtZ5x6hrJD9bP3lF/MBoqvSPZH8ABHDwGOgG2GFWIQJ2HPgwxF1n+N/wF9FQfMu2xKqN3oE7o15YicA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
